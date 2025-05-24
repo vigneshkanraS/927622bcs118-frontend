@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+# 🧮 Affordmed Average Calculator – Q2
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 👨‍🎓 Name: Vigneshwaran N K  
+## 🆔 Roll Number: 927622bcs118  
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📄 Description
 
-### `npm start`
+This is a frontend microservice app that:
+- Fetches numbers (Prime, Fibonacci, Even, Random) from the authorized API
+- Maintains a **sliding window** of **10 unique numbers**
+- Displays:
+  - 🟡 Previous state
+  - 🔵 Current state
+  - 🟢 Newly fetched numbers
+  - 📊 Calculated average of current state
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ⚙️ Tech Stack
 
-### `npm test`
+- ⚛️ React.js
+- 📦 Axios
+- 💡 JavaScript (ES6)
+- ⏱ API Timeout control (500ms)
+- 🔐 Bearer Token Authentication
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 💡 How It Works
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. User selects the type of numbers (p/f/e/r).
+2. App fetches new values from `http://20.244.56.144/evaluation-service/{numberid}`.
+3. Stores unique values up to window size (10).
+4. If already full, replaces the **oldest values** with new ones.
+5. Recalculates the average and displays the updated view.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🧪 Screenshots
 
-### `npm run eject`
+### 🔢 Prime Numbers (p)
+![Q2 Prime](./screenshots/Q2-prime.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 🧬 Fibonacci Numbers (f)
+![Q2 Fibonacci](./screenshots/Q2-fibonnic.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### ⚖️ Even Numbers (e)
+![Q2 Even](./screenshots/Q2-even.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 🎲 Random Numbers (r)
+![Q2 Random](./screenshots/Q2-random.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 📁 Folder Structure
+Q2/
+├── frontend/
+│ ├── public/
+│ ├── src/
+│ ├── screenshots/
+│ │ ├── Q2-prime.png
+│ │ ├── Q2-fibonnic.png
+│ │ ├── Q2-even.png
+│ │ ├── Q2-random.png
+│ ├── package.json
+│ └── README.md
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🔐 API Endpoint Format
+> Valid `numberid` values:  
+> - `primes` → Prime numbers  
+> - `fibo` → Fibonacci numbers  
+> - `even` → Even numbers  
+> - `rand` → Random numbers  
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📝 Notes
 
-### Analyzing the Bundle Size
+- ⏱ Requests strictly timeout after **500ms** to comply with challenge rules.
+- ❌ Skips duplicates using `Set()`.
+- 📈 Average is calculated live after every API fetch.
+- ✅ Fully tested with Postman before development.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 📫 Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- 📧 Email: vigneshkanra@gmail.com  
+- 🌐 GitHub: [vigneshkanraS](https://github.com/vigneshkanraS)  
+- 💼 Portfolio: [View Portfolio](https://yogeshneelamegam15.my.canva.site/vigneshkanra)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
