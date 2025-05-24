@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# 💼 Affordmed Frontend Test Submission
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 👨‍🎓 Name: Vigneshwaran N K  
+## 🆔 Roll Number: 927622bcs118  
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## ✅ Q1: 📈 Stock Price Viewer (React App)
 
-### `npm start`
+### 🚀 Description:
+A frontend web app to view real-time stock prices based on company selection and time intervals. Built as part of Affordmed's frontend evaluation using authorized APIs.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🔧 Tech Stack:
+- React.js (Hooks)
+- Axios (for API requests)
+- HTML5 + CSS3
+- JavaScript (ES6)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🗂️ Folder Structure
+Q1/
+├── frontend/
+│ ├── public/
+│ ├── src/
+│ ├── screenshots/
+│ │ └── GOOGL-15min.png ✅
+│ ├── package.json
+│ ├── README.md
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## ⚙️ Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 🔎 Company dropdown with tickers
+- ⏱️ Time interval selection (15/30/60 min)
+- 📊 Dynamic API call and display of price data
+- 🛠️ CORS-compliant Axios headers with Bearer token
+- 🧪 Tested manually with Postman before coding
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🧪 Screenshot
 
-### `npm run eject`
+### 🖼️ Sample Output (GOOGL - 15 min)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![GOOGL](./screenshots/GOOGL-15min.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🔐 API Used
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **GET /stocks** – To list all companies
+- **GET /stocks/{ticker}?minutes={value}** – To fetch price data
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## ⚠️ Notes
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Used `Bearer <access_token>` in the Axios headers.
+- No backend or database — purely frontend with test server APIs.
+- All work was done under the Affordmed test environment with local testing at `http://localhost:3000`.
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📫 Contact
 
-### Analyzing the Bundle Size
+- 📧 Email: vigneshkanra@gmail.com  
+- 🌐 GitHub: [vigneshkanraS](https://github.com/vigneshkanraS)
+- 💼 Portfolio: [Click Here](https://yogeshneelamegam15.my.canva.site/vigneshkanra)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
