@@ -29,7 +29,7 @@ function App() {
           headers: {
             Authorization: accessToken
           },
-          timeout: 1500  // max 500ms
+          timeout: 1500  // max 1.5 seconds
         }
       );
 
